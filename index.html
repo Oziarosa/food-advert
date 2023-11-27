@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 20px;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .container1 {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bellas {
+        width: 800px;
+        height: 300px;
+        margin-left: 50px;
+      }
+      .headtext {
+        display: flex;
+        width: 1500px;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 80px;
+      }
+      .text1 {
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 900px;
+        line-height: 33px;
+        letter-spacing: 0.2px;
+        color: rgba(250, 74, 12, 1);
+      }
+      .text2 {
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 900px;
+        letter-spacing: 0.2px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .text3 {
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 900px;
+        letter-spacing: 0.2px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .text4 {
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 900px;
+        letter-spacing: 0.2px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .container2 {
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .foodpic {
+        width: 100%;
+        height: 1700px;
+      }
+      .subcontainer {
+        display: flex;
+        flex: 1;
+        position: absolute;
+        top: 220px;
+        width: 50%;
+        align-items: center;
+        flex-direction: column;
+      }
+      .subtext {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: rgba(246, 246, 246, 1);
+        margin-bottom: -10px;
+      }
+      .subtext1 {
+        font-family: sans-serif;
+        font-size: 160px;
+        font-weight: 700px;
+        line-height: 180px;
+        letter-spacing: 0.2px;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        width: 100%;
+      }
+      .subtext2 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 200;
+        letter-spacing: 0.2px;
+        color: rgba(246, 246, 246, 1);
+        margin-top: -20px;
+      }
+      .container3 {
+        display: flex;
+        width: 45%;
+        height: 300px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .button1 {
+        display: flex;
+        width: 500px;
+        height: 150px;
+        border-radius: 80px;
+        background-color: rgba(250, 74, 12, 1);
+        justify-content: center;
+        align-items: center;
+      }
+      .button2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 150px;
+        border-radius: 80px;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 1);
+        border-style: solid;
+      }
+      .btntext1 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: rgba(246, 246, 246, 1);
+      }
+      .btntext2 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: rgba(246, 246, 246, 1);
+      }
+      .gphones {
+        width: 30%;
+        height: 2000px;
+        position: absolute;
+        top: 900px;
+        margin-right: 450px;
+      }
+      .line {
+        width: 3000px;
+        height: 3px;
+        background-color: rgba(228, 228, 228, 1);
+        margin-top: 1300px;
+      }
+      .maintext {
+        font-family: sans-serif;
+        font-size: 90px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: rgba(0, 0, 0, 1);
+        margin-top: 200px;
+      }
+      .container4 {
+        display: flex;
+        width: 80%;
+        height: 1500px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .cphone2 {
+        width: 40%;
+        height: 2200px;
+        margin-top: 500px;
+        margin-left: 400px;
+      }
+      .ccontainer {
+        display: flex;
+        width: 2400px;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 400px;
+      }
+      .ctext1 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 500px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        margin-right: 700px;
+        color: rgba(250, 74, 12, 1);
+      }
+      .ctext2 {
+        font-family: sans-serif;
+        font-size: 100px;
+        font-weight: 500px;
+        line-height: 100px;
+        letter-spacing: 0.1px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .ctext3 {
+        font-family: sans-serif;
+        font-size: 70px;
+        font-weight: 150px;
+        line-height: 100px;
+        letter-spacing: 0.1px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .dcontainer {
+        display: flex;
+        width: 80%;
+        height: 1900px;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 400px;
+      }
+      .dtext {
+        display: flex;
+        width: 2400px;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 500px;
+      }
+      .dtext1 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        margin-right: 550px;
+        color: rgba(250, 74, 12, 1);
+      }
+      .dtext2 {
+        font-family: sans-serif;
+        font-size: 100px;
+        font-weight: 500px;
+        line-height: 100px;
+        letter-spacing: 0.1px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .dtext3 {
+        font-family: sans-serif;
+        font-size: 70px;
+        font-weight: 150px;
+        line-height: 100px;
+        letter-spacing: 0.1px;
+        margin-left: 150px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .diphones1 {
+        width: 40%;
+        height: 2200px;
+        margin-top: 500px;
+        margin-left: 300px;
+      }
+      .ocontainer {
+        display: flex;
+        width: 80%;
+        height: 1500px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .oiphones {
+        width: 40%;
+        height: 2200px;
+        margin-top: 600px;
+        margin-left: 300px;
+      }
+      .otext {
+        display: flex;
+        width: 2400px;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 500px;
+      }
+      .otext1 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 500px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        margin-right: 950px;
+        color: rgba(250, 74, 12, 1);
+      }
+      .otext2 {
+        font-family: sans-serif;
+        font-size: 100px;
+        font-weight: 500px;
+        line-height: 100px;
+        letter-spacing: 0.1px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .otext3 {
+        font-family: sans-serif;
+        font-size: 70px;
+        font-weight: 150px;
+        line-height: 100px;
+        letter-spacing: 0.1px;
+        color: rgba(37, 43, 66, 1);
+      }
+      .lastcontainer {
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .lastimage {
+        width: 100%;
+        height: 1700px;
+        margin-top: 600px;
+      }
+      .lastcon1 {
+        display: flex;
+        flex: 1;
+        position: absolute;
+        top: 1100px;
+        width: 50%;
+        align-items: center;
+        flex-direction: column;
+      }
+      .lasttext1 {
+        font-family: sans-serif;
+        font-size: 90px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: rgba(246, 246, 246, 1);
+      }
+      .lasttext2 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 200;
+        letter-spacing: 0.2px;
+        color: rgba(246, 246, 246, 1);
+      }
+      .lastcont1 {
+        display: flex;
+        position: absolute;
+        width: 22%;
+        height: 300px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1000px;
+      }
+      .lastbtn1 {
+        display: flex;
+        width: 500px;
+        height: 157px;
+        border-radius: 30px;
+        background-color: rgba(250, 74, 12, 1);
+        justify-content: center;
+        align-items: center;
+      }
+      .lastbtn2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 150px;
+        border-radius: 30px;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 1);
+        border-style: solid;
+      }
+      .lasbtext1 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: rgba(246, 246, 246, 1);
+      }
+      .lasbtext2 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: rgba(246, 246, 246, 1);
+      }
+      .bottomcontain {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .btmcontainer{
+        display: flex;
+        width: 4500px;
+        height: 500px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bella1 {
+        width: 800px;
+        height: 300px;
+        margin-left: 400px;
+      }
+      .triple {
+        display: flex;
+        width: 500px;
+        height: 170px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .triple1 {
+        width: 100px;
+        height: 100px;
+      }
+      .triple2 {
+        width: 100px;
+        height: 100px;
+      }
+      .triple3 {
+        width: 100px;
+        height: 100px;
+      }
+      .authority{
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: 700px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color:rgba(92, 92, 92, 1); 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <img class="bellas" src="./headimage.png" alt="bella" />
+        <div class="headtext">
+          <h1 class="text1">Home</h1>
+          <h1 class="text2">Product</h1>
+          <h1 class="text3">Faq</h1>
+          <h1 class="text4">Contact</h1>
+        </div>
+      </div>
+      <div class="container2">
+        <img class="foodpic" src="./image1.png" alt="foodpics" />
+        <div class="subcontainer">
+          <h1 class="subtext">Food app</h1>
+          <h1 class="subtext1">
+            Why stay hungry when <br />you can order form Bella Onojie
+          </h1>
+          <h1 class="subtext2">Download the bella onoje’s food app now on</h1>
+          <div class="container3">
+            <div class="button1">
+              <h1 class="btntext1">Playstore</h1>
+            </div>
+            <div class="button2">
+              <h1 class="btntext2">App store</h1>
+            </div>
+          </div>
+        </div>
+        <img class="gphones" src="./phones1.png" alt="iphones" />
+      </div>
+      <div class="line"></div>
+      <h1 class="maintext">How the app works</h1>
+      <div class="container4">
+        <img class="cphone2" src="./tphone.png" alt="phone2" />
+        <div class="ccontainer">
+          <h1 class="ctext1">Create an account</h1>
+          <h1 class="ctext2">
+            Create/login to an existing<br />
+            account to get started
+          </h1>
+          <h1 class="ctext3">
+            An account is created with your email <br />and a desired password
+          </h1>
+        </div>
+      </div>
+      <div class="dcontainer">
+        <div class="dtext">
+          <h1 class="dtext1">Explore varieties</h1>
+          <h1 class="dtext2">
+            Shop for your favorites<br />
+            meal as e dey hot.
+          </h1>
+          <h1 class="dtext3">
+            Shop for your favorite meals or drinks<br />
+            and enjoy while doing it.
+          </h1>
+        </div>
+        <img class="diphones1" src="./dphones.png" alt="diphones" />
+      </div>
+      <div class="ocontainer">
+        <img class="oiphones" src="./ophones.png" alt="oiphone1" />
+        <div class="otext">
+          <h1 class="otext1">Checkout</h1>
+          <h1 class="otext2">
+            When you done check out<br />
+            and get it delivered.
+          </h1>
+          <h1 class="otext3">
+            When you done check out and get it<br />
+            delivered with ease.
+          </h1>
+        </div>
+      </div>
+      <div class="lastcontainer">
+        <img class="lastimage" src="./limages.png" alt="snackpics" />
+        <div class="lastcon1">
+          <h1 class="lasttext1">Download the app now.</h1>
+          <h1 class="lasttext2">
+            Available on your favorite store. Start your premium experience now
+          </h1>
+        </div>
+        <div class="lastcont1">
+          <div class="lastbtn1">
+            <h1 class="lasbtext1">Playstore</h1>
+          </div>
+          <div class="lastbtn2">
+            <h1 class="lasbtext2">App store</h1>
+          </div>
+        </div>
+      </div>
+      <div class="bottomcontain">
+        <div class="btmcontainer">
+        <img class="bella1" src="./headimage.png" alt="bellas1" />
+        <div class="triple">
+          <img class="triple1" src="./dove.png" alt="dovepics" />
+          <img class="triple2" src="./facebook.png" alt="fb" />
+          <img class="triple3" src="./instagram.png" alt="insta" />
+        </div>
+        <h1 class="authority">Copywright 2020 Bella Onojie.com</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+>
